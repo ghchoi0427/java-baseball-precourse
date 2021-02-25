@@ -32,4 +32,9 @@ public class View {
 
         System.out.println(line);
     }
+
+    public void inputCmd(Scanner sc){
+        int cmd = sc.nextInt();
+        data.command=cmd;
+    }
 }
