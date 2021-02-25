@@ -19,8 +19,14 @@ public class GameManager {
 
     }
 
-    public void judge() {
+    public int[] judge(int[] target, int[] shot) {
 
+    }
+
+
+    public int countBall(int target, int targetIndex, int shot, int shotIndex){
+        if (target == shot && targetIndex != shotIndex)return 1;
+        return 0;
     }
 
     public void StopGame() {
