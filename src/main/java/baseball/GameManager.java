@@ -20,7 +20,17 @@ public class GameManager {
     }
 
     public int[] judge(int[] target, int[] shot) {
+        int ball=0;
+        int strike=0;
 
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                countBall(target[i],i,shot[j],j);
+                countStrike(target[i],i,shot[j],j);
+            }
+        }
+
+        return new int[]{ball, strike};
     }
 
 
