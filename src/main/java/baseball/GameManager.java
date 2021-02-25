@@ -7,9 +7,11 @@ public class GameManager {
     public int[] generateNumber() {
         int[] numbers = new int[3];
         numbers[0] = RandomUtils.nextInt(1, 9);
-        numbers[1] = RandomUtils.nextInt(1, 9);
-        numbers[2] = RandomUtils.nextInt(1, 9);
 
+        while (!(numbers[0] != numbers[1] && numbers[0] != numbers[2] && numbers[1] != numbers[2])) {
+            numbers[1] = RandomUtils.nextInt(1, 9);
+            numbers[2] = RandomUtils.nextInt(1, 9);
+        }
         return numbers;
     }
 
