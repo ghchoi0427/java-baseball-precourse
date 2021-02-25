@@ -18,7 +18,18 @@ public class View {
         }
         data.target = gameManager.generateTarget();
         data.shot = shot;
+    }
 
+    public void printJudge(int[] judge){
+        String line = "";
 
+        if(judge[0]!=0){
+            line+=judge[0]+"볼 ";
+        }
+        if(judge[1]!=0){
+            line+=judge[1]+"스트라이크 ";
+        }
+
+        System.out.println(line);
     }
 }
