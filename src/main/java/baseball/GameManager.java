@@ -29,6 +29,11 @@ public class GameManager {
         return 0;
     }
 
+    public int countStrike(int target, int targetIndex, int shot, int shotIndex){
+        if (target == shot && targetIndex == shotIndex)return 1;
+        return 0;
+    }
+
     public void StopGame() {
 
     }
