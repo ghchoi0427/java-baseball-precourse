@@ -4,6 +4,18 @@ public class Data {
 
     int[] target = new int[3];
     int[] shot = new int[3];
+    int command=0;
+
+
+    public int getCommand() {
+        return command;
+    }
+
+    public void setCommand(int command) {
+        this.command = command;
+    }
+
+
 
     public int[] getTarget() {
         return target;
