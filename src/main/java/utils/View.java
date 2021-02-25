@@ -16,7 +16,7 @@ public class View {
         for (int i = 0; i < str.length(); i++) {
             shot[i] = str.charAt(i);
         }
-        data.target = gameManager.generateNumber();
+        data.target = gameManager.generateTarget();
         data.shot = shot;
 
 

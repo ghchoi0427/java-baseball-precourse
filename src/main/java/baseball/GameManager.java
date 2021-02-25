@@ -4,7 +4,7 @@ import utils.RandomUtils;
 
 public class GameManager {
 
-    public int[] generateNumber() {
+    public int[] generateTarget() {
         int[] numbers = new int[3];
         numbers[0] = RandomUtils.nextInt(1, 9);
 
@@ -29,7 +29,6 @@ public class GameManager {
                 strike+=countStrike(target[i],i,shot[j],j);
             }
         }
-
         return new int[]{ball, strike};
     }
 

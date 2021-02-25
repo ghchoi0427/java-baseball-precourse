@@ -11,7 +11,7 @@ class GameManagerTest {
 
         @Test
         public void overlapNumber(){
-                int[] arr = gameManager.generateNumber();
+                int[] arr = gameManager.generateTarget();
                 assertTrue(arr[0]!=arr[1] && arr[1]!=arr[2] && arr[0]!=arr[2]);
 
         }
