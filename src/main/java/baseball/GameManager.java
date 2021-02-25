@@ -25,8 +25,8 @@ public class GameManager {
 
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 3; j++) {
-                countBall(target[i],i,shot[j],j);
-                countStrike(target[i],i,shot[j],j);
+                ball+=countBall(target[i],i,shot[j],j);
+                strike+=countStrike(target[i],i,shot[j],j);
             }
         }
 
