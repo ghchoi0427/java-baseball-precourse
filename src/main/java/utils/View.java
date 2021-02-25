@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class View {
     GameManager gameManager = new GameManager();
-    Data data = new Data();
+    public Data data = new Data();
 
     public void inputNumber(Scanner sc) {
 
@@ -20,7 +20,7 @@ public class View {
         data.shot = shot;
     }
 
-    public void printJudge(int[] judge){
+    public boolean printJudge(int[] judge){
         String line = "";
 
         if(judge[0]!=0){
@@ -31,6 +31,12 @@ public class View {
         }
 
         System.out.println(line);
+        if(judge[1]==3){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public void inputCmd(Scanner sc){
